@@ -1,6 +1,6 @@
 # FastMatrix
 
-> ⚠️ **Learning Project**: This is my first Rust project as I learn the language! While the code might not follow all Rust best practices, I'm actively learning and improving. Feedback and suggestions are welcome!
+> ⚠️ **Learning Project**: This is my first Rust project! The code might not follow all Rust best practices, I'm learning and improving. Feedback and suggestions are welcome!
 
 FastMatrix is a Rust library designed for high-performance linear algebra operations, specifically targeting machine learning, scientific computing, and image processing tasks.
 
