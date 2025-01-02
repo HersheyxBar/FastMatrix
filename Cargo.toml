@@ -1,0 +1,34 @@
+[package]
+name = "gpu-accelerated-linalg"
+version = "0.1.0"
+edition = "2021"
+authors = ["You <you@example.com>"]
+description = "Linear algebra library optimized for machine learning and scientific computing"
+license = "MIT"
+
+[dependencies]
+ndarray = { version = "0.15", features = ["rayon"] }
+log = "0.4"
+env_logger = "0.9"
+criterion = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+num-traits = "0.2.19"
+rayon = "1.5"
+
+[lib]
+name = "gpu_accel_linalg"
+path = "src/lib.rs"
+
+[[example]]
+name = "neural_net"
+path = "examples/neural_net.rs"
+
+[[example]]
+name = "image_proc"
+path = "examples/image_proc.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
